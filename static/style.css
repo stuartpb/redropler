@@ -27,6 +27,10 @@ main {
   font-size: 24pt;
   padding: 8px;
 }
+.green-button:hover, .green-button:focus {
+  background-color: #494;
+  border-color: #383;
+}
 .alert {
   padding: 15px;
   margin-bottom: 20px;
