@@ -1,0 +1,16 @@
+extends layout
+
+append head
+  if action.status == 'in-progress'
+    meta(http-equiv="refresh", content="5")
+
+block content
+  if action.status == 'completed'
+    .alert.success #{settings.dropletDomain || 'The droplet'} has been reset.
+  else if action.status == 'in-progress'
+    .alert.intermediate #{settings.dropletDomain || 'The droplet'} is resetting...
+  else
+    .alert.error An error occurred while trying to reset #{settings.dropletDomain || 'the droplet.'}
+    form(method="POST", action="/")
+      button.green-button Try again
+
