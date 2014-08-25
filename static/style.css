@@ -22,7 +22,8 @@ main {
   background-color: #5b5;
   color: #fff;
   border-radius: 4px;
-  width: 784px;
+  border: 1px solid #4a4;
+  width: 782px;
   font-size: 24pt;
   padding: 8px;
 }
