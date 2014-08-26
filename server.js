@@ -24,7 +24,8 @@ app.post('/', function(req, res, next) {
     auth: {bearer: process.env.DIGITALOCEAN_API_TOKEN}, json: true},
     function(err, response, body) {
       if (err) return next(err);
-      if (!/^2/.test(response.statusCode)) return next(new Error(body));
+      if (!/^2/.test(response.statusCode))
+        return next(body.message ? new Error(body.message) : body);
       res.redirect('/status/' + body.id);
     });
 });
@@ -34,7 +35,8 @@ app.get('/status/:action', function(req, res, next) {
     auth: {bearer: process.env.DIGITALOCEAN_API_TOKEN}, json: true},
     function(err, response, body) {
       if (err) return next(err);
-      if (!/^2/.test(response.statusCode)) return next(new Error(body));
+      if (!/^2/.test(response.statusCode))
+        return next(body.message ? new Error(body.message) : body);
       res.render('status.jade', body);
     });
 });
