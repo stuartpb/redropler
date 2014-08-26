@@ -24,7 +24,7 @@ app.post('/', function(req, res, next) {
     auth: {bearer: process.env.DIGITALOCEAN_API_TOKEN}, json: true},
     function(err, response, body) {
       if (err) return next(err);
-      res.redirect('/status/' + res.body.id);
+      res.redirect('/status/' + body.id);
     });
 });
 
