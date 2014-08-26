@@ -26,7 +26,7 @@ app.post('/', function(req, res, next) {
       if (err) return next(err);
       if (!/^2/.test(response.statusCode))
         return next(body.message ? new Error(body.message) : body);
-      res.redirect('/status/' + body.id);
+      res.redirect('/status/' + body.action.id);
     });
 });
 
