@@ -1,6 +1,7 @@
 extends layout
 
 append head
+  link(rel="icon", href="/icons/" + action.status + ".png")
   if action.status == 'in-progress'
     meta(http-equiv="refresh", content="5")
 
