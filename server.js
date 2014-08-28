@@ -15,10 +15,10 @@ var defaultPreResetCommand =
 
 var sshCommand = [
   'temp=`mktemp`',
-  'printf "%s" "$0" >> "$temp"',
-  'timeout $4 ' +
+  'printf "%s" "$1" >> "$temp"',
+  'timeout $5 ' +
     'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ' +
-      '-i "$temp" "$1@$2" -- "$3"',
+      '-i "$temp" "$2@$3" -- "$4"',
   'rm "$temp"'].join('\n');
 
 var api_endpoint = "https://api.digitalocean.com/v2/droplets/" +
@@ -38,7 +38,7 @@ app.get('/', function(req, res) {
 });
 
 function sendCommand(req, res, next) {
-  var sshProc = spawn('bash', ['-c', sshCommand,
+  var sshProc = spawn('bash', ['-c', sshCommand, 'sshCommand',
     sshIdentity+'\n',
     sshUsername || 'root',
     dropletDomain,
