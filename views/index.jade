@@ -1,5 +1,8 @@
 extends layout
 
+append head
+  link(rel="icon", href="https://cloud.digitalocean.com/assets/icons/header/droplets-3a35c8a10cb140c4fdfcda9ad4094e0c.png")
+
 block content
   form(method="POST")
     button.green-button Reset #{settings.dropletDomain || 'droplet'}
