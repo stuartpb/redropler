@@ -16,9 +16,8 @@ var defaultPreResetCommand =
 var sshCommand = [
   'temp=`mktemp`',
   'printf "%s" "$1" >> "$temp"',
-  'timeout $5 ' +
-    'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ' +
-      '-i "$temp" "$2@$3" -- "$4"',
+  'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ' +
+    '-i "$temp" "$2@$3" -- "$4"',
   'rm "$temp"'].join('\n');
 
 var api_endpoint = "https://api.digitalocean.com/v2/droplets/" +
@@ -52,8 +51,23 @@ function sendCommand(req, res, next) {
     console.log('ssh stderr: ' + data);
   });
   sshProc.on('close', function (code) {
-    next();
+    if (sshProc) {
+      sshProc = null;
+      next();
+    }
   });
+
+  function sshProcTimeout() {
+    if (sshProc) {
+      sshProc.kill();
+      sshProc.disconnect();
+      sshProc = null;
+      next();
+    }
+  }
+
+  setTimeout(sshProcTimeout,
+    preResetCommandTimeout ? preResetCommandTimeout * 1000 : 5000);
 }
 
 function sendReset(req, res, next) {
