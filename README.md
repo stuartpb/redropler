@@ -1,4 +1,3 @@
-redropler
-=========
+# reshotput
 
 Frontend app to restore a DigitalOcean droplet to an image
