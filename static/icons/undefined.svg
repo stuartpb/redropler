@@ -12,8 +12,8 @@
    width="192"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="reset.svg"
-   inkscape:export-filename="C:\Users\Stuart\Documents\GitHub\reshotput\static\icons\reset.png"
+   sodipodi:docname="undefined.svg"
+   inkscape:export-filename="C:\Users\Stuart\Documents\GitHub\reshotput\static\icons\undefined.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -89,9 +89,16 @@
        spacingy="12px" />
   </sodipodi:namedview>
   <path
-     style="fill:#3686be;fill-opacity:1;stroke:none"
-     d="M 96,0 C 42.980664,0 0,42.980664 0,96 c 0,53.01934 42.980664,96 96,96 48.95274,0 89.34138,-36.64802 95.25,-84 l -36.4375,0 C 149.25438,135.38834 125.02852,156 96,156 62.862915,156 36,129.13708 36,96 36,62.862915 62.862915,36 96,36 c 16.56719,0 31.57645,6.70701 42.4375,17.5625 L 108,84 191.25,84 192,84 192,0 163.875,28.125 C 146.50353,10.746006 122.51341,0 96,0 z"
-     id="path3756"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="sssccsssccccccs" />
+     style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+     d="M 96 0 C 66.176624 5.9952043e-015 42 24.176624 42 54 C 42 56.026627 42.12628 58.031339 42.34375 60 L 66.625 60 C 66.229361 58.056388 66 56.060441 66 54 C 66 37.431458 79.431458 24 96 24 C 112.56854 24 126 37.431458 126 54 C 126 70.568542 112.56854 84 96 84 L 84 84 L 84 106.65625 L 84 144 L 108 144 L 108 106.65625 C 132.0441 101.19673 150 79.696375 150 54 C 150 24.176624 125.82338 -1.2099118e-014 96 0 z "
+     id="path3792" />
+  <path
+     sodipodi:type="arc"
+     style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+     id="path3815"
+     sodipodi:cx="96"
+     sodipodi:cy="174"
+     sodipodi:rx="18"
+     sodipodi:ry="18"
+     d="m 114,174 a 18,18 0 1 1 -36,0 18,18 0 1 1 36,0 z" />
 </svg>

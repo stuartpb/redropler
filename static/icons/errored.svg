@@ -12,8 +12,8 @@
    width="192"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="reset.svg"
-   inkscape:export-filename="C:\Users\Stuart\Documents\GitHub\reshotput\static\icons\reset.png"
+   sodipodi:docname="errored.svg"
+   inkscape:export-filename="C:\Users\Stuart\Documents\GitHub\reshotput\static\icons\errored.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -89,9 +89,8 @@
        spacingy="12px" />
   </sodipodi:namedview>
   <path
-     style="fill:#3686be;fill-opacity:1;stroke:none"
-     d="M 96,0 C 42.980664,0 0,42.980664 0,96 c 0,53.01934 42.980664,96 96,96 48.95274,0 89.34138,-36.64802 95.25,-84 l -36.4375,0 C 149.25438,135.38834 125.02852,156 96,156 62.862915,156 36,129.13708 36,96 36,62.862915 62.862915,36 96,36 c 16.56719,0 31.57645,6.70701 42.4375,17.5625 L 108,84 191.25,84 192,84 192,0 163.875,28.125 C 146.50353,10.746006 122.51341,0 96,0 z"
-     id="path3756"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="sssccsssccccccs" />
+     style="fill:#aa4444;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 0,36 36,0 96,60 156,0 192,36 132,96 192,156 156,192 96,132 36,192 0,156 60,96 z"
+     id="path3776"
+     inkscape:connector-curvature="0" />
 </svg>
