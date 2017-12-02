@@ -1,21 +1,21 @@
 {
-  "name": "redropler",
+  "name": "reshotput",
   "version": "0.0.0",
-  "description": "Frontend app to restore a DigitalOcean droplet to an image",
+  "description": "One-button app to restore a server to a snapshot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stuartpb/redropler.git"
+    "url": "https://github.com/stuartpb/reshotput.git"
   },
-  "author": "Stuart P. Bentley <stuart@testtrack4.com>",
+  "author": "Stuart P. Bentley <s@stuartpb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stuartpb/redropler/issues"
+    "url": "https://github.com/stuartpb/reshotput/issues"
   },
-  "homepage": "https://github.com/stuartpb/redropler",
+  "homepage": "https://github.com/stuartpb/reshotput",
   "dependencies": {
     "body-parser": "^1.6.5",
     "express": "^4.8.5",
